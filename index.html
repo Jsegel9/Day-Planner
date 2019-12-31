@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Work Day Scheduler</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 </head>
 <body>
+    <header class="jumbotron">
+        <h1>
+        Workday Planner App
+        </h1>
+        <p id="currentDay"></p>
+    </header>
+    <br>
+    <div class = "container" id="main">
+        <div id = "9am" class = "planEl">
+            <span>9 AM</span>
+            <input type = "text" id = "9input">
+            <input type = "submit" id = "9save">
+        </div>
+        <div id = "10am">
+
+        </div>
+        <div id = "11am">
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+
+        function create(element, place, text, elClass) {
+            var createEl = document.createElement(element);
+            createEl.textContent = text;
+            createEl.className = elClass;
+            var target = document.getElementById(place);
+            target.appendChild(createEl);
+    }
+    // create("div", "main", "9AM", "9am timeblock");
+
+    //for loop to make all these blocks
+
+
     
+    </script>
 </body>
 </html>
